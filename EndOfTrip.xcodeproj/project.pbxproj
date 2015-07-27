@@ -62,6 +62,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E81868A1B665BDD00DC6BAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EC57BDD1B663CC600494DDB /* Images.xcassets */,
+				8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */,
+				8EC57BD11B663CC600494DDB /* AppDelegate.h */,
+				8EC57BD21B663CC600494DDB /* AppDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E81868B1B665BE500DC6BAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EC57BDF1B663CC600494DDB /* LaunchScreen.xib */,
+				8EC57BDA1B663CC600494DDB /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E81868C1B665BEC00DC6BAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EC57BD71B663CC600494DDB /* ViewController.h */,
+				8EC57BD81B663CC600494DDB /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		8EC57BC11B663CC600494DDB = {
 			isa = PBXGroup;
 			children = (
@@ -83,14 +112,9 @@
 		8EC57BCC1B663CC600494DDB /* EndOfTrip */ = {
 			isa = PBXGroup;
 			children = (
-				8EC57BD11B663CC600494DDB /* AppDelegate.h */,
-				8EC57BD21B663CC600494DDB /* AppDelegate.m */,
-				8EC57BD71B663CC600494DDB /* ViewController.h */,
-				8EC57BD81B663CC600494DDB /* ViewController.m */,
-				8EC57BDA1B663CC600494DDB /* Main.storyboard */,
-				8EC57BDD1B663CC600494DDB /* Images.xcassets */,
-				8EC57BDF1B663CC600494DDB /* LaunchScreen.xib */,
-				8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */,
+				8E81868C1B665BEC00DC6BAF /* Controller */,
+				8E81868B1B665BE500DC6BAF /* View */,
+				8E81868A1B665BDD00DC6BAF /* Model */,
 				8EC57BCD1B663CC600494DDB /* Supporting Files */,
 			);
 			path = EndOfTrip;
@@ -420,6 +444,7 @@
 				8EC57BF21B663CC600494DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EC57BF31B663CC600494DDB /* Build configuration list for PBXNativeTarget "EndOfTripTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				8EC57BF51B663CC600494DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
