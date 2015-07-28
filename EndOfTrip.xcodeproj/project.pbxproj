@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */; };
+		8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8186921B67B35D00DC6BAF /* GlobalVariable.m */; };
 		8EC57BD01B663CC600494DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BCF1B663CC600494DDB /* main.m */; };
 		8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD21B663CC600494DDB /* AppDelegate.m */; };
 		8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */; };
-		8EC57BD91B663CC600494DDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD81B663CC600494DDB /* ViewController.m */; };
 		8EC57BDC1B663CC600494DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC57BDA1B663CC600494DDB /* Main.storyboard */; };
 		8EC57BDE1B663CC600494DDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC57BDD1B663CC600494DDB /* Images.xcassets */; };
 		8EC57BE11B663CC600494DDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC57BDF1B663CC600494DDB /* LaunchScreen.xib */; };
@@ -28,14 +29,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E81868D1B665FF800DC6BAF /* FirstScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstScreenViewController.h; path = Controller/FirstScreenViewController.h; sourceTree = "<group>"; };
+		8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstScreenViewController.m; path = Controller/FirstScreenViewController.m; sourceTree = "<group>"; };
+		8E8186911B67B2A900DC6BAF /* GlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalVariable.h; sourceTree = "<group>"; };
+		8E8186921B67B35D00DC6BAF /* GlobalVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariable.m; sourceTree = "<group>"; };
 		8EC57BCA1B663CC600494DDB /* EndOfTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC57BCE1B663CC600494DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC57BCF1B663CC600494DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EC57BD11B663CC600494DDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EC57BD21B663CC600494DDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EC57BD51B663CC600494DDB /* EndOfTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EndOfTrip.xcdatamodel; sourceTree = "<group>"; };
-		8EC57BD71B663CC600494DDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8EC57BD81B663CC600494DDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8EC57BDB1B663CC600494DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EC57BDD1B663CC600494DDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EC57BE01B663CC600494DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */,
 				8EC57BD11B663CC600494DDB /* AppDelegate.h */,
 				8EC57BD21B663CC600494DDB /* AppDelegate.m */,
+				8E8186911B67B2A900DC6BAF /* GlobalVariable.h */,
+				8E8186921B67B35D00DC6BAF /* GlobalVariable.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -85,8 +90,8 @@
 		8E81868C1B665BEC00DC6BAF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8EC57BD71B663CC600494DDB /* ViewController.h */,
-				8EC57BD81B663CC600494DDB /* ViewController.m */,
+				8E81868D1B665FF800DC6BAF /* FirstScreenViewController.h */,
+				8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -247,8 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */,
+				8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */,
 				8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */,
-				8EC57BD91B663CC600494DDB /* ViewController.m in Sources */,
+				8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */,
 				8EC57BD01B663CC600494DDB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
