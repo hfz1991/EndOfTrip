@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-bN-dCF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-bN-dCF">
                                 <rect key="frame" x="251" y="311" width="98" height="30"/>
                                 <state key="normal" title="Start New Trip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -25,16 +25,7 @@
                                     <segue destination="b30-ZV-HYV" kind="show" id="CLA-qM-qoH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1L-I8-biP">
-                                <rect key="frame" x="260" y="382" width="80" height="30"/>
-                                <state key="normal" title="Saved Trips">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="al8-vO-Ykc" kind="show" id="2PE-g0-scF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-rC-2h0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-rC-2h0">
                                 <rect key="frame" x="245" y="448" width="110" height="30"/>
                                 <state key="normal" title="Favorate Places">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,8 +34,26 @@
                                     <segue destination="KsX-pv-iWS" kind="show" id="rPh-b2-l2U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1L-I8-biP">
+                                <rect key="frame" x="260" y="382" width="80" height="30"/>
+                                <state key="normal" title="Saved Trips">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="al8-vO-Ykc" kind="show" id="2PE-g0-scF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eOc-rC-2h0" firstAttribute="top" secondItem="P1L-I8-biP" secondAttribute="bottom" constant="36" id="51D-24-fVY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eOc-rC-2h0" secondAttribute="bottom" constant="122" id="CHE-7r-1N5"/>
+                            <constraint firstItem="P1L-I8-biP" firstAttribute="centerX" secondItem="gKT-bN-dCF" secondAttribute="centerX" id="D36-4O-CTI"/>
+                            <constraint firstItem="P1L-I8-biP" firstAttribute="top" secondItem="gKT-bN-dCF" secondAttribute="bottom" constant="41" id="HTt-hk-Fn6"/>
+                            <constraint firstItem="eOc-rC-2h0" firstAttribute="centerX" secondItem="P1L-I8-biP" secondAttribute="centerX" id="aqv-jq-NhF"/>
+                            <constraint firstItem="eOc-rC-2h0" firstAttribute="centerX" secondItem="gKT-bN-dCF" secondAttribute="centerX" id="lVN-F9-t8H"/>
+                            <constraint firstAttribute="centerX" secondItem="gKT-bN-dCF" secondAttribute="centerX" id="rLz-bY-mqJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="278-ZB-7g1"/>
                 </viewController>
@@ -130,14 +139,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 1: Select Transport Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI5-Aw-cLh">
-                                <rect key="frame" x="206" y="112" width="226" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1: Select Transport Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI5-Aw-cLh">
+                                <rect key="frame" x="206" y="112" width="226" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-Ef-uY6">
-                                <rect key="frame" x="242" y="214" width="117" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-Ef-uY6">
+                                <rect key="frame" x="304" y="214" width="30" height="30"/>
                                 <state key="normal" title="Bus">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -145,8 +154,8 @@
                                     <segue destination="9g6-el-3cU" kind="show" id="g1H-ia-sjQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-vo-23C">
-                                <rect key="frame" x="242" y="275" width="117" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-vo-23C">
+                                <rect key="frame" x="302" y="275" width="34" height="30"/>
                                 <state key="normal" title="Tram">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,8 +163,8 @@
                                     <segue destination="9g6-el-3cU" kind="show" id="YKr-7x-Pyn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vri-Pf-yRc">
-                                <rect key="frame" x="242" y="336" width="117" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vri-Pf-yRc">
+                                <rect key="frame" x="303" y="338" width="33" height="30"/>
                                 <state key="normal" title="Train">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -165,6 +174,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EI5-Aw-cLh" firstAttribute="top" secondItem="Yv3-Wd-V5e" secondAttribute="bottom" constant="92" id="0gg-LG-4DY"/>
+                            <constraint firstItem="Vri-Pf-yRc" firstAttribute="top" secondItem="y5w-vo-23C" secondAttribute="bottom" constant="33" id="E0L-9c-btf"/>
+                            <constraint firstItem="uKj-Ef-uY6" firstAttribute="centerX" secondItem="y5w-vo-23C" secondAttribute="centerX" id="Eqb-AN-r96"/>
+                            <constraint firstItem="uKj-Ef-uY6" firstAttribute="centerX" secondItem="Vri-Pf-yRc" secondAttribute="centerX" id="HDX-01-Ygi"/>
+                            <constraint firstItem="uKj-Ef-uY6" firstAttribute="top" secondItem="EI5-Aw-cLh" secondAttribute="bottom" constant="81" id="HQ1-5Z-nAJ"/>
+                            <constraint firstItem="y5w-vo-23C" firstAttribute="top" secondItem="uKj-Ef-uY6" secondAttribute="bottom" constant="31" id="OCa-Ad-gbx"/>
+                            <constraint firstAttribute="centerX" secondItem="EI5-Aw-cLh" secondAttribute="centerX" constant="-19" id="Usu-sh-VXR"/>
+                            <constraint firstItem="uKj-Ef-uY6" firstAttribute="centerX" secondItem="EI5-Aw-cLh" secondAttribute="centerX" id="yjH-6q-K8U"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELQ-a9-rPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
