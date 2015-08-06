@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8E1E50361B725C7600F335C7 /* APTEncription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E50351B725C7600F335C7 /* APTEncription.m */; };
+		8E1E50571B7322A000F335C7 /* MediaType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E50561B7322A000F335C7 /* MediaType.m */; };
+		8E1E505D1B7322C600F335C7 /* TransportType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E505C1B7322C600F335C7 /* TransportType.m */; };
+		8E1E50601B7322D500F335C7 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E505F1B7322D500F335C7 /* Line.m */; };
+		8E1E50631B7322E300F335C7 /* StartingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E50621B7322E300F335C7 /* StartingPoint.m */; };
+		8E1E50661B7322F500F335C7 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E50651B7322F500F335C7 /* Destination.m */; };
 		8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */; };
 		8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8186921B67B35D00DC6BAF /* GlobalVariable.m */; };
 		8EC57BD01B663CC600494DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BCF1B663CC600494DDB /* main.m */; };
@@ -32,6 +37,16 @@
 /* Begin PBXFileReference section */
 		8E1E50341B725C7600F335C7 /* APTEncription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTEncription.h; path = Model/APTEncription.h; sourceTree = "<group>"; };
 		8E1E50351B725C7600F335C7 /* APTEncription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTEncription.m; path = Model/APTEncription.m; sourceTree = "<group>"; };
+		8E1E50551B7322A000F335C7 /* MediaType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaType.h; path = Controller/MediaType.h; sourceTree = "<group>"; };
+		8E1E50561B7322A000F335C7 /* MediaType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaType.m; path = Controller/MediaType.m; sourceTree = "<group>"; };
+		8E1E505B1B7322C600F335C7 /* TransportType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransportType.h; path = Controller/TransportType.h; sourceTree = "<group>"; };
+		8E1E505C1B7322C600F335C7 /* TransportType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransportType.m; path = Controller/TransportType.m; sourceTree = "<group>"; };
+		8E1E505E1B7322D500F335C7 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Line.h; path = Controller/Line.h; sourceTree = "<group>"; };
+		8E1E505F1B7322D500F335C7 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Line.m; path = Controller/Line.m; sourceTree = "<group>"; };
+		8E1E50611B7322E300F335C7 /* StartingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartingPoint.h; path = Controller/StartingPoint.h; sourceTree = "<group>"; };
+		8E1E50621B7322E300F335C7 /* StartingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartingPoint.m; path = Controller/StartingPoint.m; sourceTree = "<group>"; };
+		8E1E50641B7322F500F335C7 /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Destination.h; path = Controller/Destination.h; sourceTree = "<group>"; };
+		8E1E50651B7322F500F335C7 /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Destination.m; path = Controller/Destination.m; sourceTree = "<group>"; };
 		8E81868D1B665FF800DC6BAF /* FirstScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstScreenViewController.h; path = Controller/FirstScreenViewController.h; sourceTree = "<group>"; };
 		8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstScreenViewController.m; path = Controller/FirstScreenViewController.m; sourceTree = "<group>"; };
 		8E8186911B67B2A900DC6BAF /* GlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalVariable.h; sourceTree = "<group>"; };
@@ -97,6 +112,16 @@
 			children = (
 				8E81868D1B665FF800DC6BAF /* FirstScreenViewController.h */,
 				8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */,
+				8E1E50551B7322A000F335C7 /* MediaType.h */,
+				8E1E50561B7322A000F335C7 /* MediaType.m */,
+				8E1E505B1B7322C600F335C7 /* TransportType.h */,
+				8E1E505C1B7322C600F335C7 /* TransportType.m */,
+				8E1E505E1B7322D500F335C7 /* Line.h */,
+				8E1E505F1B7322D500F335C7 /* Line.m */,
+				8E1E50611B7322E300F335C7 /* StartingPoint.h */,
+				8E1E50621B7322E300F335C7 /* StartingPoint.m */,
+				8E1E50641B7322F500F335C7 /* Destination.h */,
+				8E1E50651B7322F500F335C7 /* Destination.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -257,11 +282,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */,
+				8E1E50601B7322D500F335C7 /* Line.m in Sources */,
+				8E1E505D1B7322C600F335C7 /* TransportType.m in Sources */,
 				8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */,
+				8E1E50631B7322E300F335C7 /* StartingPoint.m in Sources */,
 				8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */,
 				8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */,
 				8E1E50361B725C7600F335C7 /* APTEncription.m in Sources */,
+				8E1E50661B7322F500F335C7 /* Destination.m in Sources */,
 				8EC57BD01B663CC600494DDB /* main.m in Sources */,
+				8E1E50571B7322A000F335C7 /* MediaType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

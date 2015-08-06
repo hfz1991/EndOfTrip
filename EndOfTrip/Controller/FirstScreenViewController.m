@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [APTEncription generateURLWithDevIDAndKey:@"http://timetableapi.ptv.vic.gov.au/v2/search/Route"];
     
 }
 

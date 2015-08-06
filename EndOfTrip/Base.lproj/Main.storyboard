@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="2161"/>
         </scene>
-        <!--View Controller-->
+        <!--Transport Type-->
         <scene sceneID="7fy-xf-Wb8">
             <objects>
-                <viewController id="b30-ZV-HYV" sceneMemberID="viewController">
+                <viewController id="b30-ZV-HYV" customClass="TransportType" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yv3-Wd-V5e"/>
                         <viewControllerLayoutGuide type="bottom" id="gqW-fc-a3F"/>
@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="649"/>
         </scene>
-        <!--View Controller-->
+        <!--Media Type-->
         <scene sceneID="f3A-Bi-CjL">
             <objects>
-                <viewController id="9g6-el-3cU" sceneMemberID="viewController">
+                <viewController id="9g6-el-3cU" customClass="MediaType" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lcl-w4-1Dd"/>
                         <viewControllerLayoutGuide type="bottom" id="rrz-jU-GQN"/>
@@ -234,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="2531" y="648"/>
         </scene>
-        <!--View Controller-->
+        <!--Line-->
         <scene sceneID="Fcf-lf-ztS">
             <objects>
-                <viewController id="O3U-mk-waw" sceneMemberID="viewController">
+                <viewController id="O3U-mk-waw" customClass="Line" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QAL-zx-lIV"/>
                         <viewControllerLayoutGuide type="bottom" id="Yue-J0-3ui"/>
@@ -250,7 +250,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0v8-Kd-Dj2">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0v8-Kd-Dj2">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0v8-Kd-Dj2" id="tKv-hf-0Z0">
@@ -265,15 +265,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="lineTable" destination="Xo3-xW-H98" id="hcV-F9-OGx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivE-zf-a5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3199" y="648"/>
         </scene>
-        <!--View Controller-->
+        <!--Starting Point-->
         <scene sceneID="nLV-9v-Tpg">
             <objects>
-                <viewController id="Q1t-Wc-PsC" sceneMemberID="viewController">
+                <viewController id="Q1t-Wc-PsC" customClass="StartingPoint" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K6q-bH-5VX"/>
                         <viewControllerLayoutGuide type="bottom" id="VCa-9c-iih"/>
@@ -306,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="3870" y="648"/>
         </scene>
-        <!--View Controller-->
+        <!--Destination-->
         <scene sceneID="zsJ-xj-v9o">
             <objects>
-                <viewController id="mIP-jF-dEg" sceneMemberID="viewController">
+                <viewController id="mIP-jF-dEg" customClass="Destination" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h2Y-Ei-UD5"/>
                         <viewControllerLayoutGuide type="bottom" id="p9H-kq-5Rf"/>
