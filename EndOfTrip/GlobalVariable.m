@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "GlobalVariable.h"
 
-NSString *const loginServiceURL = @"TEST";
 
 
 

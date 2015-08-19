@@ -9,7 +9,6 @@
 #ifndef EndOfTrip_GlobalVariable_h
 #define EndOfTrip_GlobalVariable_h
 
-FOUNDATION_EXPORT NSString *const loginServiceURL;
 FOUNDATION_EXPORT NSInteger *transportType;
 
 #endif

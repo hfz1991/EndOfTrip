@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Charles. All rights reserved.
 //
 
+#import "StartingPoint.h"
 #import "Line.h"
 #import "APTEncription.h"
 @interface Line (){
@@ -83,4 +84,13 @@
     }
     [_lineTable reloadData];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    StartingPoint *vc = [segue destinationViewController];
+    NSIndexPath *index = [_lineTable indexPathForSelectedRow];
+//    NSLog(@"Selected #%ld",(long)index.row);
+    vc.lineNumberString = [NSString stringWithFormat:@"%ld",(long)index.row+1];
+}
+
 @end
+

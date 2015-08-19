@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartingPoint : UIViewController
+@interface StartingPoint : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *startingTable;
+@property NSString *lineNumberString;
 
 @end
