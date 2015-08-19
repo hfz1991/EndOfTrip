@@ -151,6 +151,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="busButton:" destination="b30-ZV-HYV" eventType="touchUpInside" id="rJJ-Vr-QzW"/>
                                     <segue destination="9g6-el-3cU" kind="show" id="g1H-ia-sjQ"/>
                                 </connections>
                             </button>
@@ -160,6 +161,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="tramButton:" destination="b30-ZV-HYV" eventType="touchUpInside" id="0eC-HO-5or"/>
                                     <segue destination="9g6-el-3cU" kind="show" id="YKr-7x-Pyn"/>
                                 </connections>
                             </button>
@@ -169,6 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="trainButton:" destination="b30-ZV-HYV" eventType="touchUpInside" id="bvw-kb-jHx"/>
                                     <segue destination="9g6-el-3cU" kind="show" id="FOU-JD-Y6K"/>
                                 </connections>
                             </button>

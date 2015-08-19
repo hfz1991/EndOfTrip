@@ -10,4 +10,8 @@
 
 @interface TransportType : UIViewController
 
+- (IBAction)busButton:(id)sender;
+- (IBAction)tramButton:(id)sender;
+- (IBAction)trainButton:(id)sender;
+
 @end

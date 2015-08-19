@@ -5,7 +5,7 @@
 //  Created by Charles He on 6/08/2015.
 //  Copyright (c) 2015 Charles. All rights reserved.
 //
-
+#import "GlobalVariable.h"
 #import "StartingPoint.h"
 #import "Line.h"
 #import "APTEncription.h"
@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSURL *url=[APTEncription generateURLWithDevIDAndKey:@"http://timetableapi.ptv.vic.gov.au/v2/lines/mode/0"];
+    NSString *urlString = [NSString stringWithFormat:@"http://timetableapi.ptv.vic.gov.au/v2/lines/mode/%d",TRANSPORT_TYPE];
+    NSURL *url=[APTEncription generateURLWithDevIDAndKey:urlString];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     connection=[NSURLConnection connectionWithRequest:request delegate:self];
     if (connection) {
