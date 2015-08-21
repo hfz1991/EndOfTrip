@@ -6,9 +6,19 @@
 //  Copyright (c) 2015 Charles. All rights reserved.
 //
 
-#ifndef EndOfTrip_GlobalVariable_h
-#define EndOfTrip_GlobalVariable_h
+#include <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+@class GlobalVariable;
 
-extern NSInteger *TRANSPORT_TYPE;
+@interface GlobalVariable : NSObject{
+    NSString *_testString;
+    NSNumber *_TRANSPORT_TYPE;
+}
 
-#endif
++ (GlobalVariable *)sharedInstance;
+
+@property (nonatomic, strong) NSNumber *TRANSPORT_TYPE;
+@property (nonatomic, strong) NSString *testString;
+
+
+@end

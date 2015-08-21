@@ -20,8 +20,11 @@
 @implementation Line
 - (void)viewDidLoad {
     [super viewDidLoad];
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
     // Do any additional setup after loading the view.
-    NSString *urlString = [NSString stringWithFormat:@"http://timetableapi.ptv.vic.gov.au/v2/lines/mode/%d",TRANSPORT_TYPE];
+    NSLog(@"#TEST:%@",obc . TRANSPORT_TYPE);
+
+    NSString *urlString = [NSString stringWithFormat:@"http://timetableapi.ptv.vic.gov.au/v2/lines/mode/%d",obc.TRANSPORT_TYPE.intValue];
     NSURL *url=[APTEncription generateURLWithDevIDAndKey:urlString];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     connection=[NSURLConnection connectionWithRequest:request delegate:self];

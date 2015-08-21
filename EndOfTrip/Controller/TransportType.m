@@ -11,14 +11,18 @@
 @implementation TransportType
 
 - (IBAction)busButton:(id)sender {
-    TRANSPORT_TYPE = 0;
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:0];
 }
 
 - (IBAction)tramButton:(id)sender {
-    TRANSPORT_TYPE = 1;
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:1];
+    NSLog(@"%@",obc.TRANSPORT_TYPE);
 }
 
 - (IBAction)trainButton:(id)sender {
-    TRANSPORT_TYPE = 2;
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:2];
 }
 @end
