@@ -12,7 +12,7 @@
 
 - (IBAction)busButton:(id)sender {
     GlobalVariable *obc = [GlobalVariable sharedInstance];
-    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:0];
+    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:2];
 }
 
 - (IBAction)tramButton:(id)sender {
@@ -23,6 +23,6 @@
 
 - (IBAction)trainButton:(id)sender {
     GlobalVariable *obc = [GlobalVariable sharedInstance];
-    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:2];
+    obc.TRANSPORT_TYPE = [NSNumber numberWithInt:0];
 }
 @end

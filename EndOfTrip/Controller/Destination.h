@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Destination : UIViewController
+@interface Destination : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+
+@property NSString *lineNumberString;
+@property (strong, nonatomic) IBOutlet UITableView *destinationTable;
 
 @end

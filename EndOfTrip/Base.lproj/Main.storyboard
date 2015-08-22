@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dnT-DR-99s">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First Screen View Controller-->
@@ -205,14 +207,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 2: Select Media Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvi-nv-9cY">
-                                <rect key="frame" x="187" y="101" width="226" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Select Media Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvi-nv-9cY">
+                                <rect key="frame" x="200" y="112" width="201" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6A-zf-XyH">
-                                <rect key="frame" x="277" y="225" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6A-zf-XyH">
+                                <rect key="frame" x="284" y="224" width="32" height="30"/>
                                 <state key="normal" title="GPS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -220,8 +222,8 @@
                                     <segue destination="O3U-mk-waw" kind="show" id="13f-Ln-acd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-f0-21a">
-                                <rect key="frame" x="259" y="277" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-f0-21a">
+                                <rect key="frame" x="266" y="285" width="68" height="30"/>
                                 <state key="normal" title="Timetable">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,6 +233,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fvi-nv-9cY" firstAttribute="top" secondItem="Lcl-w4-1Dd" secondAttribute="bottom" constant="92" id="4SM-uR-hnm"/>
+                            <constraint firstItem="R6A-zf-XyH" firstAttribute="centerX" secondItem="D5L-4Y-U6r" secondAttribute="centerXWithinMargins" id="91I-hB-Kec"/>
+                            <constraint firstItem="HJs-f0-21a" firstAttribute="top" secondItem="R6A-zf-XyH" secondAttribute="bottom" constant="31" id="CH1-RC-F7f"/>
+                            <constraint firstAttribute="centerX" secondItem="HJs-f0-21a" secondAttribute="centerX" id="bVY-cT-Cpa"/>
+                            <constraint firstItem="R6A-zf-XyH" firstAttribute="top" secondItem="fvi-nv-9cY" secondAttribute="bottom" constant="91" id="fJO-pk-VKb"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="fvi-nv-9cY" secondAttribute="centerX" id="sQQ-OU-7ax"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGZ-Wz-R0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +259,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xo3-xW-H98">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xo3-xW-H98">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -267,6 +277,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xo3-xW-H98" firstAttribute="leading" secondItem="VsL-WI-Cyf" secondAttribute="leadingMargin" constant="-16" id="6MV-4A-qoQ"/>
+                            <constraint firstItem="Xo3-xW-H98" firstAttribute="top" secondItem="VsL-WI-Cyf" secondAttribute="topMargin" id="DwQ-AS-dzE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xo3-xW-H98" secondAttribute="trailing" constant="-16" id="VAj-83-v7E"/>
+                            <constraint firstItem="Yue-J0-3ui" firstAttribute="top" secondItem="Xo3-xW-H98" secondAttribute="bottom" id="y9g-9m-uRH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lineTable" destination="Xo3-xW-H98" id="hcV-F9-OGx"/>
@@ -288,7 +304,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-h9-mVb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-h9-mVb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -299,13 +315,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="mIP-jF-dEg" kind="show" id="ogT-L6-tJT"/>
+                                            <segue destination="mIP-jF-dEg" kind="show" id="5X6-PY-C9b"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iwa-h9-mVb" secondAttribute="trailing" constant="-16" id="0O7-fC-94R"/>
+                            <constraint firstItem="Iwa-h9-mVb" firstAttribute="leading" secondItem="bVk-pF-Uxd" secondAttribute="leadingMargin" constant="-16" id="5Dq-3k-RaZ"/>
+                            <constraint firstItem="VCa-9c-iih" firstAttribute="top" secondItem="Iwa-h9-mVb" secondAttribute="bottom" id="cC4-XX-PtK"/>
+                            <constraint firstItem="Iwa-h9-mVb" firstAttribute="top" secondItem="bVk-pF-Uxd" secondAttribute="topMargin" id="pnG-9U-Ovz"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="startingTable" destination="Iwa-h9-mVb" id="ZyA-ZA-BKr"/>
@@ -313,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRG-qf-ts5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3870" y="648"/>
+            <point key="canvasLocation" x="3865" y="648"/>
         </scene>
         <!--Destination-->
         <scene sceneID="zsJ-xj-v9o">
@@ -346,6 +368,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTable" destination="ov1-K7-G32" id="snO-lF-rrX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VK-mG-HUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

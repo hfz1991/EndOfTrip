@@ -8,6 +8,8 @@
 
 #import "StartingPoint.h"
 #import "APTEncription.h"
+#import "Destination.h"
+
 @interface StartingPoint (){
     NSURLConnection *connection;
     NSMutableData *jsonData;
@@ -85,5 +87,10 @@
     [_startingTable reloadData];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    Destination *vc = [segue destinationViewController];
+    //    NSLog(@"Selected #%ld",(long)index.row);
+    vc.lineNumberString = _lineNumberString;
+}
 
 @end
