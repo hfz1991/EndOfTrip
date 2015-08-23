@@ -14,7 +14,7 @@
 @end
 
 @implementation GlobalVariable
-@synthesize testString = _testString;
+@synthesize STARTING_STOP_ID = _STARTING_STOP_ID;
 @synthesize TRANSPORT_TYPE = _TRANSPORT_TYPE;
 
 + (GlobalVariable *)sharedInstance {
@@ -29,7 +29,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _testString = nil;
+        _STARTING_STOP_ID = nil;
         _TRANSPORT_TYPE = nil;
     }
     return self;

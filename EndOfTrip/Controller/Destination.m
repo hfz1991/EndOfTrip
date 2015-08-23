@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Select Destination";
+
     // Do any additional setup after loading the view.
     NSString *urlString = [NSString stringWithFormat:@"http://timetableapi.ptv.vic.gov.au/v2/mode/0/line/%@/stops-for-line",_lineNumberString];
     NSURL *url=[APTEncription generateURLWithDevIDAndKey:urlString];

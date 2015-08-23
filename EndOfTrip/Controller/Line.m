@@ -20,6 +20,8 @@
 @implementation Line
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Select Line";
+    
     GlobalVariable *obc = [GlobalVariable sharedInstance];
     // Do any additional setup after loading the view.
     NSLog(@"#TEST:%@",obc . TRANSPORT_TYPE);

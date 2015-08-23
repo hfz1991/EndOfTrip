@@ -11,14 +11,14 @@
 @class GlobalVariable;
 
 @interface GlobalVariable : NSObject{
-    NSString *_testString;
+    NSNumber *_STARTING_STOP_ID;
     NSNumber *_TRANSPORT_TYPE;
 }
 
 + (GlobalVariable *)sharedInstance;
 
 @property (nonatomic, strong) NSNumber *TRANSPORT_TYPE;
-@property (nonatomic, strong) NSString *testString;
+@property (nonatomic, strong) NSNumber *STARTING_STOP_ID;
 
 
 @end

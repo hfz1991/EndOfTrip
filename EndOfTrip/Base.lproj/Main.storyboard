@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--First Screen View Controller-->
@@ -353,7 +354,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yfU-gZ-uWP">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="yfU-gZ-uWP">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfU-gZ-uWP" id="nPB-UT-oTp">
@@ -388,20 +389,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Point of Interest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i1-99-KYZ">
-                                <rect key="frame" x="213" y="93" width="175" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Point of Interest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i1-99-KYZ">
+                                <rect key="frame" x="213" y="112" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-NS-s5O">
-                                <rect key="frame" x="342" y="376" width="59" height="30"/>
-                                <state key="normal" title="Comfirm">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-Kt-0u6">
-                                <rect key="frame" x="195" y="376" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-Kt-0u6">
+                                <rect key="frame" x="225" y="376" width="31" height="30"/>
                                 <state key="normal" title="Skip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -409,8 +404,30 @@
                                     <segue destination="7n7-bE-YaW" kind="show" id="Kb8-Zg-MWh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-NS-s5O">
+                                <rect key="frame" x="346" y="376" width="59" height="30"/>
+                                <state key="normal" title="Comfirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lGk-Kt-0u6" firstAttribute="top" secondItem="5i1-99-KYZ" secondAttribute="bottom" constant="243" id="Io7-KO-C1C"/>
+                            <constraint firstAttribute="centerX" secondItem="5i1-99-KYZ" secondAttribute="centerX" constant="-0.5" id="Qey-4i-tTg"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="fzt-NS-s5O" secondAttribute="centerX" multiplier="0.8" id="S5X-Ap-DZI"/>
+                            <constraint firstItem="5i1-99-KYZ" firstAttribute="top" secondItem="b8E-kc-Aje" secondAttribute="bottom" constant="92" id="THG-dd-EQJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fzt-NS-s5O" secondAttribute="centerX" multiplier="0.8" id="WbY-ld-zwK"/>
+                            <constraint firstItem="lGk-Kt-0u6" firstAttribute="centerX" secondItem="H2J-cR-23B" secondAttribute="centerXWithinMargins" multiplier="0.8" id="s0f-ae-AOZ"/>
+                            <constraint firstItem="fzt-NS-s5O" firstAttribute="top" secondItem="lGk-Kt-0u6" secondAttribute="top" id="uBz-2k-W5z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lGk-Kt-0u6" secondAttribute="centerX" multiplier="0.8" id="zkh-g3-l3T"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zkh-g3-l3T"/>
+                                <exclude reference="WbY-ld-zwK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCs-bd-JfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
