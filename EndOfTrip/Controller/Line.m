@@ -96,6 +96,9 @@
     NSIndexPath *index = [_lineTable indexPathForSelectedRow];
 //    NSLog(@"Selected #%ld",(long)index.row);
     vc.lineNumberString = [NSString stringWithFormat:@"%ld",(long)index.row+1];
+    
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.LINE_ID_STRING = [NSString stringWithFormat:@"%ld",(long)index.row+1];
 }
 
 @end

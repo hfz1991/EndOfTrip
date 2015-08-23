@@ -14,8 +14,9 @@
 @end
 
 @implementation GlobalVariable
-@synthesize STARTING_STOP_ID = _STARTING_STOP_ID;
 @synthesize TRANSPORT_TYPE = _TRANSPORT_TYPE;
+@synthesize LINE_ID_STRING = _LINE_ID_STRING;
+@synthesize STARTING_STOP_ID_STRING = _STARTING_STOP_ID_STRING;
 
 + (GlobalVariable *)sharedInstance {
     static dispatch_once_t onceToken;
@@ -29,8 +30,9 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _STARTING_STOP_ID = nil;
         _TRANSPORT_TYPE = nil;
+        _LINE_ID_STRING = nil;
+        _STARTING_STOP_ID_STRING = nil;
     }
     return self;
 }

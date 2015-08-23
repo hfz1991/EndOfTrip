@@ -9,11 +9,13 @@
 #import "StartingPoint.h"
 #import "APTEncription.h"
 #import "Destination.h"
+#import "GlobalVariable.h"
 
 @interface StartingPoint (){
     NSURLConnection *connection;
     NSMutableData *jsonData;
     NSMutableArray *lineNameArray;
+    NSMutableArray *allDataDictionary;
 }
 @end
 
@@ -80,7 +82,7 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSMutableArray *allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     for(int i = 0 ; i< allDataDictionary.count ; i++){
         NSDictionary *currentIndex = [allDataDictionary objectAtIndex:i];
         NSString *currentLineName = [currentIndex objectForKey:@"location_name"];
@@ -91,8 +93,13 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     Destination *vc = [segue destinationViewController];
-    //    NSLog(@"Selected #%ld",(long)index.row);
     vc.lineNumberString = _lineNumberString;
+    
+    NSIndexPath *index = [_startingTable indexPathForSelectedRow];
+    NSDictionary *dataDictionary = [allDataDictionary objectAtIndex:index.row];
+    NSString *selectedStopID = [dataDictionary objectForKey:@"stop_id"];
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.STARTING_STOP_ID_STRING = selectedStopID;
 }
 
 @end

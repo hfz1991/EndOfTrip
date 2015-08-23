@@ -15,6 +15,7 @@
 		8E1E50661B7322F500F335C7 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E50651B7322F500F335C7 /* Destination.m */; };
 		8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */; };
 		8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8186921B67B35D00DC6BAF /* GlobalVariable.m */; };
+		8E9D0C221B89E29D00E25EF4 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */; };
 		8EC57BD01B663CC600494DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BCF1B663CC600494DDB /* main.m */; };
 		8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD21B663CC600494DDB /* AppDelegate.m */; };
 		8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */; };
@@ -51,6 +52,8 @@
 		8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstScreenViewController.m; path = Controller/FirstScreenViewController.m; sourceTree = "<group>"; };
 		8E8186911B67B2A900DC6BAF /* GlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalVariable.h; sourceTree = "<group>"; };
 		8E8186921B67B35D00DC6BAF /* GlobalVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariable.m; sourceTree = "<group>"; };
+		8E9D0C201B89E29C00E25EF4 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeViewController.h; path = Controller/TimeViewController.h; sourceTree = "<group>"; };
+		8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeViewController.m; path = Controller/TimeViewController.m; sourceTree = "<group>"; };
 		8EC57BCA1B663CC600494DDB /* EndOfTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC57BCE1B663CC600494DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC57BCF1B663CC600494DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				8E1E50621B7322E300F335C7 /* StartingPoint.m */,
 				8E1E50641B7322F500F335C7 /* Destination.h */,
 				8E1E50651B7322F500F335C7 /* Destination.m */,
+				8E9D0C201B89E29C00E25EF4 /* TimeViewController.h */,
+				8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				8E1E505D1B7322C600F335C7 /* TransportType.m in Sources */,
 				8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */,
 				8E1E50631B7322E300F335C7 /* StartingPoint.m in Sources */,
+				8E9D0C221B89E29D00E25EF4 /* TimeViewController.m in Sources */,
 				8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */,
 				8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */,
 				8E1E50361B725C7600F335C7 /* APTEncription.m in Sources */,
