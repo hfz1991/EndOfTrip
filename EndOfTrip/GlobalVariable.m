@@ -17,6 +17,8 @@
 @synthesize TRANSPORT_TYPE = _TRANSPORT_TYPE;
 @synthesize LINE_ID_STRING = _LINE_ID_STRING;
 @synthesize STARTING_STOP_ID_STRING = _STARTING_STOP_ID_STRING;
+@synthesize STARTING_STOP_STRING = _STARTING_STOP_STRING;
+@synthesize DESTINATION_STOP_STRING = _DESTINATION_STOP_STRING;
 
 + (GlobalVariable *)sharedInstance {
     static dispatch_once_t onceToken;
@@ -33,6 +35,8 @@
         _TRANSPORT_TYPE = nil;
         _LINE_ID_STRING = nil;
         _STARTING_STOP_ID_STRING = nil;
+        _STARTING_STOP_STRING = nil;
+        _DESTINATION_STOP_STRING = nil;
     }
     return self;
 }

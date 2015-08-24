@@ -14,12 +14,16 @@
     NSNumber *_TRANSPORT_TYPE;
     NSString *_LINE_ID_STRING;
     NSString *_STARTING_STOP_ID_STRING;
+    NSString *_STARTING_STOP_STRING;
+    NSString *_DESTINATION_STOP_STRING;
 }
 
 + (GlobalVariable *)sharedInstance;
 
 @property (nonatomic, strong) NSNumber *TRANSPORT_TYPE;
 @property (nonatomic, strong) NSString *STARTING_STOP_ID_STRING;
+@property (nonatomic, strong) NSString *STARTING_STOP_STRING;
 @property (nonatomic, strong) NSString *LINE_ID_STRING;
+@property (nonatomic, strong) NSString *DESTINATION_STOP_STRING;
 
 @end

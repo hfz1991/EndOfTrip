@@ -100,6 +100,7 @@
     NSString *selectedStopID = [dataDictionary objectForKey:@"stop_id"];
     GlobalVariable *obc = [GlobalVariable sharedInstance];
     obc.STARTING_STOP_ID_STRING = selectedStopID;
+    obc.STARTING_STOP_STRING = [dataDictionary objectForKey:@"location_name"];
 }
 
 @end

@@ -5,13 +5,16 @@
 //  Created by Charles He on 6/08/2015.
 //  Copyright (c) 2015 Charles. All rights reserved.
 //
-
+#import "GlobalVariable.h"
+#import "TimeViewController.h"
 #import "Destination.h"
 #import "APTEncription.h"
+
 @interface Destination (){
     NSURLConnection *connection;
     NSMutableData *jsonData;
     NSMutableArray *lineNameArray;
+    NSMutableArray *allDataDictionary;
 }
 @end
 
@@ -78,13 +81,20 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSMutableArray *allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     for(int i = 0 ; i< allDataDictionary.count ; i++){
         NSDictionary *currentIndex = [allDataDictionary objectAtIndex:i];
         NSString *currentLineName = [currentIndex objectForKey:@"location_name"];
         [lineNameArray addObject:currentLineName];
     }
     [_destinationTable reloadData];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *index = [_destinationTable indexPathForSelectedRow];
+    NSDictionary *dataDictionary = [allDataDictionary objectAtIndex:index.row];
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.DESTINATION_STOP_STRING = [dataDictionary objectForKey:@"location_name"];
 }
 
 @end

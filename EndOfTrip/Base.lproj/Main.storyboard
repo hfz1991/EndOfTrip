@@ -473,10 +473,10 @@
             </objects>
             <point key="canvasLocation" x="5895" y="645"/>
         </scene>
-        <!--View Controller-->
+        <!--Journey View Controller-->
         <scene sceneID="7Zb-Ur-sb0">
             <objects>
-                <viewController id="au3-7y-oau" sceneMemberID="viewController">
+                <viewController id="au3-7y-oau" customClass="JourneyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i9O-H1-ZxH"/>
                         <viewControllerLayoutGuide type="bottom" id="a5V-Lk-BbJ"/>
@@ -485,18 +485,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3Q-tv-MWA">
-                                <rect key="frame" x="277" y="509" width="58" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3Q-tv-MWA">
+                                <rect key="frame" x="0.0" y="562" width="600" height="38"/>
+                                <color key="backgroundColor" red="0.25315576361435355" green="0.94335932282744184" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="BIw-ML-JAL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="New trip">
+                                    <color key="titleColor" red="1" green="0.99819144540744764" blue="0.99532894012926798" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="presentation" id="nvA-w9-zj0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Stop: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrC-Fr-ueQ">
+                                <rect key="frame" x="23" y="55" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transport Type: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-pZ-Gxo">
+                                <rect key="frame" x="23" y="78" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62n-jV-BOr">
+                                <rect key="frame" x="142" y="55" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymV-nF-W3y">
+                                <rect key="frame" x="154" y="78" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoV-pG-RBo">
+                                <rect key="frame" x="169" y="99" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Journey:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksf-GB-epg">
+                                <rect key="frame" x="247" y="20" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Stop: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L60-tU-dyx">
+                                <rect key="frame" x="23" y="99" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="62n-jV-BOr" firstAttribute="leading" secondItem="MrC-Fr-ueQ" secondAttribute="trailing" constant="8" id="0vm-8U-Wn8"/>
+                            <constraint firstItem="MrC-Fr-ueQ" firstAttribute="top" secondItem="Ksf-GB-epg" secondAttribute="bottom" constant="14" id="1RU-eB-8IB"/>
+                            <constraint firstItem="GoV-pG-RBo" firstAttribute="top" secondItem="L60-tU-dyx" secondAttribute="top" id="9Ig-yx-74M"/>
+                            <constraint firstItem="62n-jV-BOr" firstAttribute="top" secondItem="MrC-Fr-ueQ" secondAttribute="top" id="BCP-nv-0Fd"/>
+                            <constraint firstItem="L60-tU-dyx" firstAttribute="top" secondItem="2A4-pZ-Gxo" secondAttribute="bottom" id="Dn6-Sn-yzo"/>
+                            <constraint firstItem="2A4-pZ-Gxo" firstAttribute="top" secondItem="MrC-Fr-ueQ" secondAttribute="bottom" constant="2" id="GeJ-AH-yeP"/>
+                            <constraint firstItem="Ksf-GB-epg" firstAttribute="top" secondItem="i9O-H1-ZxH" secondAttribute="bottom" id="LkK-dV-gju"/>
+                            <constraint firstItem="L60-tU-dyx" firstAttribute="leading" secondItem="MrC-Fr-ueQ" secondAttribute="leading" id="MB4-bF-dgy"/>
+                            <constraint firstItem="ymV-nF-W3y" firstAttribute="top" secondItem="2A4-pZ-Gxo" secondAttribute="top" id="R0v-Mi-jdn"/>
+                            <constraint firstItem="o3Q-tv-MWA" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="-16" id="cmK-GS-J5y"/>
+                            <constraint firstItem="ymV-nF-W3y" firstAttribute="leading" secondItem="2A4-pZ-Gxo" secondAttribute="trailing" constant="8" id="iC5-52-hD8"/>
+                            <constraint firstItem="MrC-Fr-ueQ" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="7" id="iGH-NB-hCG"/>
+                            <constraint firstAttribute="centerX" secondItem="Ksf-GB-epg" secondAttribute="centerX" id="jZS-i7-V1X"/>
+                            <constraint firstItem="62n-jV-BOr" firstAttribute="leading" secondItem="MrC-Fr-ueQ" secondAttribute="leading" id="kBO-9c-jmP"/>
+                            <constraint firstItem="L60-tU-dyx" firstAttribute="leading" secondItem="2A4-pZ-Gxo" secondAttribute="leading" id="lQe-8L-LIq"/>
+                            <constraint firstItem="GoV-pG-RBo" firstAttribute="leading" secondItem="L60-tU-dyx" secondAttribute="trailing" constant="8" id="oNW-EV-Bdb"/>
+                            <constraint firstItem="a5V-Lk-BbJ" firstAttribute="top" secondItem="o3Q-tv-MWA" secondAttribute="bottom" id="qE5-Dy-Uef"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o3Q-tv-MWA" secondAttribute="trailing" constant="-16" id="yTf-9F-NOQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kBO-9c-jmP"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="TransportTypeLabel" destination="ymV-nF-W3y" id="28T-ys-WqK"/>
+                        <outlet property="destinationStopLabel" destination="GoV-pG-RBo" id="ys2-Z2-NW2"/>
+                        <outlet property="startingStopLabel" destination="62n-jV-BOr" id="u5t-fJ-bUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHb-Rh-mFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -522,8 +600,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nvA-w9-zj0"/>
         <segue reference="egq-vO-ZUX"/>
         <segue reference="g1H-ia-sjQ"/>
-        <segue reference="nvA-w9-zj0"/>
     </inferredMetricsTieBreakers>
 </document>

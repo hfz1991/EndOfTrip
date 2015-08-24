@@ -85,12 +85,22 @@
     NSMutableArray *valueArray = [allDataDictionary objectForKey:@"values"];
     for(int i = 0 ; i< valueArray.count ; i++){
         NSDictionary *currentIndex = [valueArray objectAtIndex:i];
-        NSString *currentLineName = [currentIndex objectForKey:@"time_timetable_utc"];
-        [timeArray addObject:currentLineName];
+        NSString *currentUTCTime = [currentIndex objectForKey:@"time_timetable_utc"];
+        
+        NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
+        NSTimeZone *inputTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+        [fmt setTimeZone:inputTimeZone];
+        [fmt setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+        NSDate *date = [fmt dateFromString:currentUTCTime];
+        NSTimeZone *outPutTimeZone = [NSTimeZone localTimeZone];
+        NSDateFormatter *outPutFormatter = [[NSDateFormatter alloc]init];
+        [outPutFormatter setTimeZone:outPutTimeZone];
+        [outPutFormatter setDateFormat:@"HH:mm"];
+        NSString *outPutTimeString = [outPutFormatter stringFromDate:date];
+        
+        [timeArray addObject:outPutTimeString];
     }
     
-    NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
-    fmt.dateFormat = @"yyyy-mm-MM'T'HH:mm:ss'Z'";
     
     [_timeTable reloadData];
 }
