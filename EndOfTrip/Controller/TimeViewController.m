@@ -14,6 +14,7 @@
     NSURLConnection *connection;
     NSMutableData *jsonData;
     NSMutableArray *timeArray;
+    NSDictionary *allDataDictionary;
 }
 
 @end
@@ -81,7 +82,7 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSDictionary *allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    allDataDictionary=[NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     NSMutableArray *valueArray = [allDataDictionary objectForKey:@"values"];
     for(int i = 0 ; i< valueArray.count ; i++){
         NSDictionary *currentIndex = [valueArray objectAtIndex:i];
@@ -105,5 +106,14 @@
     [_timeTable reloadData];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *index = [_timeTable indexPathForSelectedRow];
+    NSMutableArray *dataArray = [allDataDictionary objectForKey:@"values"];
+    NSDictionary *dataDictionary = [dataArray objectAtIndex:index.row];
+    NSDictionary *runDictionary = [dataDictionary objectForKey:@"run"];
+    GlobalVariable *obc = [GlobalVariable sharedInstance];
+    obc.RUN_ID_STRING = [runDictionary objectForKey:@"run_id"];
+    
+}
 
 @end

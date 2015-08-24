@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JourneyViewController : UIViewController
+@interface JourneyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *startingStopLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TransportTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *destinationStopLabel;
+@property (weak, nonatomic) IBOutlet UITableView *journeyTable;
 
 @end

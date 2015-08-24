@@ -536,6 +536,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HoK-Yz-PtX">
+                                <rect key="frame" x="0.0" y="128" width="600" height="426"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ciO-OJ-z8Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciO-OJ-z8Z" id="m1C-wN-EzF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Stop: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L60-tU-dyx">
                                 <rect key="frame" x="23" y="99" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -554,18 +567,24 @@
                             <constraint firstItem="Ksf-GB-epg" firstAttribute="top" secondItem="i9O-H1-ZxH" secondAttribute="bottom" id="LkK-dV-gju"/>
                             <constraint firstItem="L60-tU-dyx" firstAttribute="leading" secondItem="MrC-Fr-ueQ" secondAttribute="leading" id="MB4-bF-dgy"/>
                             <constraint firstItem="ymV-nF-W3y" firstAttribute="top" secondItem="2A4-pZ-Gxo" secondAttribute="top" id="R0v-Mi-jdn"/>
+                            <constraint firstItem="HoK-Yz-PtX" firstAttribute="top" secondItem="L60-tU-dyx" secondAttribute="bottom" constant="8" id="V8d-sa-JLQ"/>
                             <constraint firstItem="o3Q-tv-MWA" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="-16" id="cmK-GS-J5y"/>
+                            <constraint firstItem="HoK-Yz-PtX" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="-16" id="grb-P9-AQJ"/>
+                            <constraint firstItem="o3Q-tv-MWA" firstAttribute="top" secondItem="HoK-Yz-PtX" secondAttribute="bottom" constant="8" id="hc9-B4-KUO"/>
                             <constraint firstItem="ymV-nF-W3y" firstAttribute="leading" secondItem="2A4-pZ-Gxo" secondAttribute="trailing" constant="8" id="iC5-52-hD8"/>
                             <constraint firstItem="MrC-Fr-ueQ" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="7" id="iGH-NB-hCG"/>
                             <constraint firstAttribute="centerX" secondItem="Ksf-GB-epg" secondAttribute="centerX" id="jZS-i7-V1X"/>
                             <constraint firstItem="62n-jV-BOr" firstAttribute="leading" secondItem="MrC-Fr-ueQ" secondAttribute="leading" id="kBO-9c-jmP"/>
                             <constraint firstItem="L60-tU-dyx" firstAttribute="leading" secondItem="2A4-pZ-Gxo" secondAttribute="leading" id="lQe-8L-LIq"/>
+                            <constraint firstItem="HoK-Yz-PtX" firstAttribute="leading" secondItem="zd4-pm-REX" secondAttribute="leadingMargin" constant="-12" id="lob-gL-XIa"/>
                             <constraint firstItem="GoV-pG-RBo" firstAttribute="leading" secondItem="L60-tU-dyx" secondAttribute="trailing" constant="8" id="oNW-EV-Bdb"/>
                             <constraint firstItem="a5V-Lk-BbJ" firstAttribute="top" secondItem="o3Q-tv-MWA" secondAttribute="bottom" id="qE5-Dy-Uef"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HoK-Yz-PtX" secondAttribute="trailing" constant="-16" id="tmD-N1-bhx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o3Q-tv-MWA" secondAttribute="trailing" constant="-16" id="yTf-9F-NOQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="lob-gL-XIa"/>
                                 <exclude reference="kBO-9c-jmP"/>
                             </mask>
                         </variation>
@@ -573,6 +592,7 @@
                     <connections>
                         <outlet property="TransportTypeLabel" destination="ymV-nF-W3y" id="28T-ys-WqK"/>
                         <outlet property="destinationStopLabel" destination="GoV-pG-RBo" id="ys2-Z2-NW2"/>
+                        <outlet property="journeyTable" destination="HoK-Yz-PtX" id="2gX-r2-f6d"/>
                         <outlet property="startingStopLabel" destination="62n-jV-BOr" id="u5t-fJ-bUD"/>
                     </connections>
                 </viewController>

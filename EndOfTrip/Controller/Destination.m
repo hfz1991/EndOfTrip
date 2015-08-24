@@ -95,6 +95,7 @@
     NSDictionary *dataDictionary = [allDataDictionary objectAtIndex:index.row];
     GlobalVariable *obc = [GlobalVariable sharedInstance];
     obc.DESTINATION_STOP_STRING = [dataDictionary objectForKey:@"location_name"];
+    NSLog(@"DEBUG:Destination %@",obc.DESTINATION_STOP_STRING);
 }
 
 @end
