@@ -18,6 +18,7 @@
 		8E9D0C221B89E29D00E25EF4 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */; };
 		8E9D0C251B8B648800E25EF4 /* JourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C241B8B648800E25EF4 /* JourneyViewController.m */; };
 		8E9D0C291B8B831F00E25EF4 /* JourneyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C281B8B831F00E25EF4 /* JourneyTableViewCell.m */; };
+		8E9D0C2B1B8B87B300E25EF4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9D0C2A1B8B87B300E25EF4 /* logo.png */; };
 		8EC57BD01B663CC600494DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BCF1B663CC600494DDB /* main.m */; };
 		8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD21B663CC600494DDB /* AppDelegate.m */; };
 		8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */; };
@@ -60,6 +61,7 @@
 		8E9D0C241B8B648800E25EF4 /* JourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneyViewController.m; sourceTree = "<group>"; };
 		8E9D0C271B8B831F00E25EF4 /* JourneyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JourneyTableViewCell.h; path = Controller/JourneyTableViewCell.h; sourceTree = "<group>"; };
 		8E9D0C281B8B831F00E25EF4 /* JourneyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JourneyTableViewCell.m; path = Controller/JourneyTableViewCell.m; sourceTree = "<group>"; };
+		8E9D0C2A1B8B87B300E25EF4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		8EC57BCA1B663CC600494DDB /* EndOfTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC57BCE1B663CC600494DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC57BCF1B663CC600494DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		8EC57BCD1B663CC600494DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E9D0C2A1B8B87B300E25EF4 /* logo.png */,
 				8EC57BCE1B663CC600494DDB /* Info.plist */,
 				8EC57BCF1B663CC600494DDB /* main.m */,
 			);
@@ -284,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9D0C2B1B8B87B300E25EF4 /* logo.png in Resources */,
 				8EC57BDC1B663CC600494DDB /* Main.storyboard in Resources */,
 				8EC57BE11B663CC600494DDB /* LaunchScreen.xib in Resources */,
 				8EC57BDE1B663CC600494DDB /* Images.xcassets in Resources */,
