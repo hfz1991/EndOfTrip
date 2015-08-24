@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *destinationStopLabel;
 @property (weak, nonatomic) IBOutlet UITableView *journeyTable;
 
+
 @end

@@ -17,6 +17,7 @@
 		8E8186931B67B35D00DC6BAF /* GlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8186921B67B35D00DC6BAF /* GlobalVariable.m */; };
 		8E9D0C221B89E29D00E25EF4 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */; };
 		8E9D0C251B8B648800E25EF4 /* JourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C241B8B648800E25EF4 /* JourneyViewController.m */; };
+		8E9D0C291B8B831F00E25EF4 /* JourneyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D0C281B8B831F00E25EF4 /* JourneyTableViewCell.m */; };
 		8EC57BD01B663CC600494DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BCF1B663CC600494DDB /* main.m */; };
 		8EC57BD31B663CC600494DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD21B663CC600494DDB /* AppDelegate.m */; };
 		8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC57BD41B663CC600494DDB /* EndOfTrip.xcdatamodeld */; };
@@ -57,6 +58,8 @@
 		8E9D0C211B89E29C00E25EF4 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeViewController.m; path = Controller/TimeViewController.m; sourceTree = "<group>"; };
 		8E9D0C231B8B648800E25EF4 /* JourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JourneyViewController.h; sourceTree = "<group>"; };
 		8E9D0C241B8B648800E25EF4 /* JourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneyViewController.m; sourceTree = "<group>"; };
+		8E9D0C271B8B831F00E25EF4 /* JourneyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JourneyTableViewCell.h; path = Controller/JourneyTableViewCell.h; sourceTree = "<group>"; };
+		8E9D0C281B8B831F00E25EF4 /* JourneyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JourneyTableViewCell.m; path = Controller/JourneyTableViewCell.m; sourceTree = "<group>"; };
 		8EC57BCA1B663CC600494DDB /* EndOfTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC57BCE1B663CC600494DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC57BCF1B663CC600494DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 		8E81868C1B665BEC00DC6BAF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E9D0C261B8B82F600E25EF4 /* Customs Cells */,
 				8E81868D1B665FF800DC6BAF /* FirstScreenViewController.h */,
 				8E81868E1B665FF800DC6BAF /* FirstScreenViewController.m */,
 				8E1E50551B7322A000F335C7 /* MediaType.h */,
@@ -134,6 +138,15 @@
 				8E9D0C241B8B648800E25EF4 /* JourneyViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		8E9D0C261B8B82F600E25EF4 /* Customs Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D0C271B8B831F00E25EF4 /* JourneyTableViewCell.h */,
+				8E9D0C281B8B831F00E25EF4 /* JourneyTableViewCell.m */,
+			);
+			name = "Customs Cells";
 			sourceTree = "<group>";
 		};
 		8EC57BC11B663CC600494DDB = {
@@ -295,6 +308,7 @@
 				8EC57BD61B663CC600494DDB /* EndOfTrip.xcdatamodeld in Sources */,
 				8E1E50601B7322D500F335C7 /* Line.m in Sources */,
 				8E1E505D1B7322C600F335C7 /* TransportType.m in Sources */,
+				8E9D0C291B8B831F00E25EF4 /* JourneyTableViewCell.m in Sources */,
 				8E81868F1B665FF800DC6BAF /* FirstScreenViewController.m in Sources */,
 				8E1E50631B7322E300F335C7 /* StartingPoint.m in Sources */,
 				8E9D0C221B89E29D00E25EF4 /* TimeViewController.m in Sources */,

@@ -9,6 +9,7 @@
 #import "JourneyViewController.h"
 #import "APTEncription.h"
 #import "GlobalVariable.h"
+#import "JourneyTableViewCell.h"
 
 @interface JourneyViewController (){
     NSURLConnection *connection;
@@ -69,12 +70,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier=@"cell";
     
-    UITableViewCell *cell=(UITableViewCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    JourneyTableViewCell *cell=(JourneyTableViewCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if(!cell)
     {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell=[[JourneyTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    cell.textLabel.text=[stopArray objectAtIndex:indexPath.row];
+    cell.stopLabel.text = [stopArray objectAtIndex:indexPath.row];
+    cell.timeLabel.text = [timeArray objectAtIndex:indexPath.row];
     
     return cell;
 }
